@@ -9,6 +9,7 @@
     "exportEXT": "code --list-extensions > vscode-extensions.txt",
     "dev": "NODE_ENV=development nodemon app.js",
     "prod": "NODE_ENV=production nodemon app.js",
+    "sandbox": "node mongoose_sandbox.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -38,7 +39,9 @@
     "prettier": "^1.18.2"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.7.8",
+    "morgan": "^1.9.1"
   },
   "engines": {
     "node": "^10"
