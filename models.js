@@ -2,9 +2,9 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const sortAnswers = function(a, b) {
-  //- negative a before b
-  //0 no change
-  //+ positive a after b
+  // - negative a before b
+  // 0 no change
+  // + positive a after b
   if (a.votes === b.votes) return b.updatedAt - a.updatedAt
   return b.votes - a.votes
 }
