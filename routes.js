@@ -3,9 +3,7 @@ const router = express.Router()
 
 // GET /questions
 // Route for questions collection
-router.get('/', (req, res) => {
-  res.json({ response: 'You sent me a GET request' })
-})
+router.get('/', (req, res) => res.json({ response: 'You sent me a GET request' }))
 
 // POST /questions
 // Route for creating questions
@@ -18,11 +16,7 @@ router.post('/', (req, res) => {
 
 // GET /questions/:id
 // Route for specific questions
-router.get('/:qID', (req, res) => {
-  res.json({
-    response: `You sent me a GET request for ID ${req.params.qID}`,
-  })
-})
+router.get('/:qID', (req, res) => res.json({ response: `You sent me a GET request for ID ${req.params.qID}` }))
 
 // POST /questions/:id/answers
 // Route for creating an answer
